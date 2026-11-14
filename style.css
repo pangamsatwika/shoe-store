@@ -8,7 +8,7 @@ html,
 body {
     width: 100%;
     height: auto;
-    min-height: 0;
+    min-height: 100%;
     margin: 0;
     padding: 0;
 }
@@ -280,7 +280,7 @@ footer {
     padding: 35px 8% 15px;
     color: white;
     width: 100%;
-    margin: 0;
+    margin-bottom: 0;
 }
 .footer-content {
     display: grid;
@@ -314,7 +314,10 @@ footer {
     font-size: 12px;
 }
 @media (max-width: 546px) {
-    body {
+    html, body {
+        margin: 0;
+        padding: 0;
+        min-height: 100%;
         overflow: hidden;
     }
     header {
@@ -536,8 +539,9 @@ footer {
 
     footer {
         width: 100%;
-        margin: 0;
-        padding: 15px 7%;
+        margin-top: auto;
+        margin-bottom: 0;
+        padding-bottom: 20px;
     }
 
     .footer-content {
